@@ -15,10 +15,11 @@ a {
 }
 
 .header {
-  background-color: #fff;
+  background-color: rgb(234, 224, 224);
   box-shadow: 1px 1px 4px 0;
   position: fixed;
   width: 100%;
+  z-index: 5000;
 }
 
 .header ul {
@@ -26,14 +27,16 @@ a {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;
+  background-color: rgb(246, 234, 234);
 }
 
 .header li a {
-  display: block;
+  display: flex;
+  justify-content: center;
   padding: 20px 20px;
   border-right: 1px solid rgb(252, 247, 247);
   text-decoration: none;
+  z-index: 1000;
 }
 
 .header li a:hover,
@@ -58,7 +61,6 @@ a {
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
-  float: right;
   padding: 28px 20px;
   position: relative;
   user-select: none;
@@ -67,7 +69,7 @@ a {
 .header .menu-icon .navicon {
   background: rgb(63, 44, 44);
   display: block;
-  height: 2px;
+  height: 3px;
   position: relative;
   transition: background 0.2s ease-out;
   width: 18px;
@@ -100,7 +102,78 @@ a {
   max-height: 240px;
 }
 
-@media (min-width: 390px) {
+.moto {
+  animation-name: moto;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes moto {
+  0% {
+    transform: translate(0px, 0px);
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: translate(300px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+.banniere {
+  width: 100%;
+  height: 500px;
+  background-image: url(images/plage.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  box-shadow: 0px 4px 4px #1c1a19;
+  z-index: 250;
+}
+.banniere img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.button {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  color: yellow;
+  border: 2px solid #f0fe28;
+  z-index: 500;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.pres {
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(213, 212, 211);
+  margin-top: 10px;
+  border-radius: 25%;
+}
+footer {
+  border-top: 2px dashed #000;
+  width: 100%;
+  background-color: #f9f1f1;
+  color: #333;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+footer ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+footer ul li a img {
+  margin-right: 0.5rem;
+}
+footer ul li a i {
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
   .header li {
     float: left;
   }
@@ -115,21 +188,27 @@ a {
   .header .menu-icon {
     display: none;
   }
+  footer ul li a i {
+    display: inline;
+  }
+  .container-card .card {
+    width: calc(100% / 3);
+    margin-bottom: 0;
+  }
 }
-.moto {
-  animation-name: moto;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+
+/* friends */
+.container-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-@keyframes moto {
-  0% {
-    transform: translate(0px, 0px);
-    transform: rotate(-45deg);
-  }
-  50% {
-    transform: translate(300px, 0px);
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
+.container-card .card {
+  margin-top: 2rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.container-card .card img {
+  width: 100%;
+  height: auto;
 }
