@@ -21,6 +21,20 @@ a {
   position: fixed;
   width: 100%;
   z-index: 5000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header nav {
+}
+
+.header .menu {
+  position: absolute;
+  top: 85px;
+  right: 0;
+  display: none;
 }
 
 .header ul {
@@ -45,21 +59,13 @@ a {
   background-color: #f9f1f1;
 }
 
-.header .logo {
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-.header .menu {
+/* .header .menu {
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
-}
+} */
 
-.header .menu-icon {
+/* .header .menu-icon {
   cursor: pointer;
   display: inline-block;
   padding: 28px 20px;
@@ -93,15 +99,15 @@ a {
 
 .header .menu-icon .navicon:after {
   top: -5px;
-}
+} */
 
-.header .menu-btn {
+/* .header .menu-btn {
   display: none;
 }
 
 .header .menu-btn:checked ~ .menu {
   max-height: 240px;
-}
+} */
 
 .moto {
   animation-name: moto;
@@ -205,19 +211,21 @@ footer ul li a i {
 
 @media screen and (min-width: 500px) {
   .header li {
-    float: left;
+    display: inline-block;
   }
   .header li a {
     padding: 20px 30px;
   }
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .menu-icon {
+
+  .burger {
     display: none;
   }
+
+  .header .menu {
+    position: initial;
+    display: flex;
+  }
+  
   footer ul li a i {
     display: inline;
   }
