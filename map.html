@@ -5,28 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="blog.css" media="screen" />
-    <title>Map</title>
+    <title>Ma moto</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/casque.png">
   </head>
   <body>
     <header class="header">
-      <a href="" class="logo">Vivre de Moto et d'eau fraiche</a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"
-        ><span class="navicon"></span
-      ></label>
-      <ul class="menu">
-        <li><a href="index.html">Acceuil</a></li>
-        <li><a href="friends.html">Les Copains</a></li>
-        <li><a href="map.html">TT</a></li>
-      </ul>
-
-      <img
+    
+      <div class="logo"><img  src= "./images/home.png" width=50></div>
+     
+        <img
         src="images/moto.png"
         class="moto"
         alt="moto"
         width="50px"
         height="50px"
-      />
+        />
+      
+         <nav>
+        <ul class="menu">
+          <li><a href="index.html">Acceuil</a></li>
+          <li><a href="friends.html">Les Copains</a></li>
+          <li><a href="map.html">TT</a></li>
+        </ul>
+        <img class="burger"  src="./images/menu.svg" width=50 height=50/>
+      </nav>
+    
     </header>
 
     <section class="container-map">
@@ -49,19 +52,18 @@
           height="441"
         />
       </div>
-      <div class="text">
-        <p>
-          <h3>Le Tourist Trophy: </h3>
-          En 1907, les premières courses de moto se disputent sur un circuit de
+      <div class="tex">
+          <h2>Le Tourist Trophy: </h2>
+          <p >En 1907, les premières courses de moto se disputent sur un circuit de
           24 km entre Saint John’s et Peel avec deux catégories au départ :
           monocylindres et bicylindres. Après plus de quatre heures de course,
           c’est l’un des frères Collier, Charlie, qui passe le premier la ligne
           d’arrivée au guidon de la Matchless monocylindre de sa fabrication,
           avec une vitesse moyenne de 61,46 km/h, précédant deux Triumph, la
           Matchless de son frère Harry, qui établit le record du tour, n'ayant
-          pu terminer la course.<br />
+          pu terminer la course.</p><button class="btn2 ">Lire le reste</button>
 
-          Depuis 1911, la course se déroule sur le tracé actuel de 60 km et 264
+          <p class="texte"> 1911, la course se déroule sur le tracé actuel de 60 km et 264
           virages (soit 360 km au total des six tours), et elle ne connaît que
           peu d’interruptions, pendant les deux Guerres mondiales, mais aussi
           lors de l'épidémie de fièvre aphteuse en 2001. Cette course était
@@ -95,5 +97,7 @@
         </p>
       </div>
     </section>
+    <script src="index.js"></script>
   </body>
+ 
 </html>

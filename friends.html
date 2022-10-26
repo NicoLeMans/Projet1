@@ -3,31 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="blog.css" media="screen" />
-    <title>friends</title>
+    <title>Ma moto</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/casque.png">
   </head>
   <body>
     <header class="header">
-      <a href="" class="logo">Vivre de Moto et d'eau fraiche</a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"
-        ><span class="navicon"></span
-      ></label>
-      <ul class="menu">
-        <li><a href="index.html">Acceuil</a></li>
-        <li><a href="friends.html">Les Copains</a></li>
-        <li><a href="map.html">TT</a></li>
-      </ul>
-
-      <img
+    
+      <div class="logo"><img  src= "./images/home.png" width=50></div>
+     
+        <img
         src="images/moto.png"
         class="moto"
         alt="moto"
         width="50px"
         height="50px"
-      />
+        />
+      
+         <nav>
+        <ul class="menu">
+          <li><a href="index.html">Acceuil</a></li>
+          <li><a href="friends.html">Les Copains</a></li>
+          <li><a href="map.html">TT</a></li>
+        </ul>
+        <img class="burger"  src="./images/menu.svg" width=50 height=50/>
+      </nav>
+    
     </header>
+   
 
     <section class="container-card">
       <div class="card">
@@ -38,7 +42,7 @@
           width="300"
           height="500"
         />
-        <h3>Mathéo: "le calculateur"</h3>
+        <h3>Mathéo: "le calculateur".</h3>
       </div>
       <div class="card">
         <img
@@ -48,7 +52,7 @@
           width="300"
           height="500"
         />
-        <h3>Benjamin "le BG"</h3>
+        <h3>Benjamin: "le BG".</h3>
       </div>
       <div class="card">
         <img
@@ -58,8 +62,9 @@
           width="300"
           height="500"
         />
-        <h3>Paul "ça passe"</h3>
+        <h3>Paul: "ça passe".</h3>
       </div>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>
