@@ -9,14 +9,17 @@ burger.addEventListener("click", () => {
 const btn = document.querySelector("button");
 const text = document.querySelector(".text");
 
-btn.addEventListener("click", () => {
-  text.classList.toggle("visible");
-});
-
+if (btn != null) {
+  btn.addEventListener("click", () => {
+    text.classList.toggle("visible");
+  });
+}
 //TT//
-const btn2 =document.querySelector("button");
+const btn2 = document.querySelector("button");
 const texte = document.querySelector(".texte");
 
-btn2.addEventListener("click",() => {
-  texte.classList.toggle("open");
-});
+if (btn2 != null) {
+  btn2.addEventListener("click", () => {
+    texte.classList.toggle("open");
+  });
+}
